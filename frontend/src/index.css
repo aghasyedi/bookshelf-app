@@ -1,0 +1,442 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fbfdffd6;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 1px 10px #e1e1e1;
+  z-index: 20;
+  border-bottom: 1px solid #d1d1d1;
+  background-color: #f4f7fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto;
+}
+.navbar .logo-title {
+  text-decoration: none;
+}
+.navbar .logo-title {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  padding-left: 5px;
+}
+
+.navbar h2 {
+  color: #2c3e50;
+  text-decoration: none;
+}
+.navbar nav{
+  display: flex;
+  align-items: center;
+}
+
+/* .username {
+  font-size: 16px;
+  padding-bottom: 5px;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-weight: 500;
+} */
+
+.authBtn {
+  background-color: #5380d4;
+  color: white;
+  margin: 0px 5px;
+  transition: all .3s;
+}
+
+.authBtn:hover {
+  background-color: #5380d4d4;
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 6px 20px;
+  width: 100%;
+}
+
+
+
+/* Button Styles */
+button {
+  border: none;
+  font-size: 18px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 7px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.auth-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50px);
+}
+
+.auth-form h1 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  padding-top: 50px;
+}
+
+.auth-form form {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.auth-form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #5380d4;
+  color: white;
+  width: 100%;
+}
+
+/* Home page container */
+.home{
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.home-container, .dashboard-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px 10px;
+}
+.book-detail-container{
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px 10px;
+  padding-top: 80px;
+}
+
+/* Header styles */
+.home-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.home-title {
+  font-size: 3rem;
+  color: #2c3e50;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  padding: 10px 0px;
+}
+
+
+/* BookSearch CSS */
+
+.book-search-container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.book-search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.book-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.book-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.book-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.book-item img {
+  width: 100px;
+  height: 150px;
+  margin-right: 20px;
+}
+
+.book-item p {
+  margin: 5px 0;
+}
+
+.add-to-shelf-button {
+  padding: 8px 15px;
+  font-size: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-to-shelf-button:hover {
+  background-color: #0056b3;
+}
+
+
+.dashboard-container h1 {
+  text-align: center;
+}
+
+
+/* ----- MyBookshelf CSS -----*/
+.bookshelf-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 10px;
+  padding-top: 80px;
+}
+.bookshelf-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookshelf-items{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bookshelf-list {
+  max-width: 500px;
+  min-width: 400px;
+  width: 100%;
+  margin: 10px auto;
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+.bookshelf-list img {
+  width: 100px;
+  height: 150px;
+  margin-right: 15px;
+}
+
+.bookshelf-list h3 {
+  font-size: 18px;
+}
+.bookshelf-list button{
+  font-size: 15px;
+}
+.bookshelf-list .progressBtn{
+  margin-right: 5px;
+}
+.bookshelf-list .finishedBtn{
+  border: 1px solid #0056b3;
+  color: #0056b3;
+  background-color: transparent;
+}
+.bookshelf-items .noBooks{
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+/* Container for the entire book detail section */
+.book-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 80px;
+  font-family: Arial, sans-serif;
+}
+.book-detail-container .book-content a{
+  margin-right: 10px;
+}
+
+/* Book content section */
+.book-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Book image styling */
+.book-content img {
+  max-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Book details styling */
+.book-info {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.book-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.book-info p {
+  margin: 5px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Reviews section */
+.review-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.review-section h3 {
+  margin-bottom: 10px;
+}
+
+.review-section p {
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Review Form styling */
+.review-form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.review-form select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.review-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.review-form button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .bookshelf-header h2{
+    font-size: 20px;
+  }
+  .book-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-info {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .book-content img {
+    margin-bottom: 15px;
+  }
+}
