@@ -37,7 +37,7 @@ This project is a **Bookshelf** web application built using the **MERN** stack (
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Bookshelf.git
+   git clone https://github.com/aghasyedi/bookshelf-app.git
    cd Bookshelf
    ```
 2. Install backend dependencies:
